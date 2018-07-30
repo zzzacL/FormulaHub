@@ -24,6 +24,10 @@ def trilist():
     print ("Trig Formulas:")
     print ("pythagorean theorem: a^2 + b^2 = c^2")
     
+def vislist():
+    print ("Visualizers:")
+    print ("30-60-90 Visualizer: '369'")
+    
 def complist():
     salist()
     print ("")
@@ -31,6 +35,24 @@ def complist():
     print ("")
     trilist()
     print ("")
+    vislist()
+    print ("")
+
+def rtri369():
+    print ("")
+    print (str(o) + " u")
+    print ("+ _")
+    print ("|60°- _")
+    print ("|       - _ " + str(h) + " u")
+    print ("|           - _")
+    print ("|               - _")
+    print ("+ - +               - _")
+    print ("|90°|                30°- _")
+    print ("+ - + - - - - - - - - - - - - ")
+    print ("        " + str(a) + " u")
+    print ("")
+
+
 
 complist()
 
@@ -125,10 +147,16 @@ while True:
             
     elif form == "sphere":
             u = input("Unit type: ")
-            
             v = round(v,4)
             print ("Volume: " + str(v) + " " + u + " cubed")
-    
+
+#visuzalizer list
+    elif form == "369":
+            o = int(input("Opposite: "))
+            a = int(input("Adjacent: "))
+            h = int(input("Hypotenuse: "))
+            rtri369()
+
 #help list
     elif form == "#help":
             print ("")
@@ -137,21 +165,25 @@ while True:
             print ("#salist: Brings up Surface Area Formula list")
             print ("#vollist: Brings up Volume Formula list")
             print ("#trilist: Brings up Trig Formula list")
+            print ("#vislist: Brings up Visualizer list")
             print ("Press Enter to exit.")
             print ("")
 
     elif form == "#list":
             complist()
-    
+
     elif form == "#salist":
             salist()
-            
+
     elif form == "#vollist":
             vollist()
-            
+
     elif form == "#trilist":
             trilist()
-            
+
+    elif form == "#vislist":
+            vislist()
+
     else:
         print ("Please select from the #list.")
 
