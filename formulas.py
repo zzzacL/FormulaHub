@@ -21,7 +21,7 @@ def vollist():
     print ("sphere · · · · · · : V = 4/3πr^3")
     
 def trilist():
-    print ("Triangle Formulas:")
+    print ("Trig Formulas:")
     print ("pythagorean theorem: a^2 + b^2 = c^2")
     
 def complist():
@@ -41,7 +41,7 @@ while True:
     form = input("Input: ")
     form = form.lower()
 
-#triangle list
+#trig list
     if form == "pythagorean theorem":
             u = input("Unit type: ")
             a = int(input("Side A: "))
@@ -134,9 +134,9 @@ while True:
             print ("")
             print ("#help: Brings up this list.")
             print ("#list: Brings up the list of all formulas.")
-            print ("#salist: Brings up Surface Area formula list")
-            print ("#vollist: Brings up Volume formula list")
-            print ("#trilist: Brings up Triangle formula list")
+            print ("#salist: Brings up Surface Area Formula list")
+            print ("#vollist: Brings up Volume Formula list")
+            print ("#trilist: Brings up Trig Formula list")
             print ("Press Enter to exit.")
             print ("")
 
