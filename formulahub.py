@@ -1,10 +1,11 @@
 import math
+def logo():
+    print ("████  ████  ███   ██ ██  █  █  █      ██   █  █  █  █  ███ ")
+    print ("█     █  █  █  █  █ █ █  █  █  █     █  █  █  █  █  █  █ █ ")
+    print ("███   █  █  ███   █   █  █  █  █     ████  ████  █  █  █  █")
+    print ("█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.04")
 
-print ("████  ████  ███   ██ ██  █  █  █      ██   █  █  █  █  ███ ")
-print ("█     █  █  █  █  █ █ █  █  █  █     █  █  █  █  █  █  █ █ ")
-print ("███   █  █  ███   █   █  █  █  █     ████  ████  █  █  █  █")
-print ("█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.02")
-
+logo()
 
 print ("This program will display a list of formulas to complete mathematical operations.")
 print ("Select the name of the formula you require.")
@@ -33,6 +34,7 @@ def trilist():
 def vislist():
     print ("Visualizers:")
     print ("30-60-90 Visualizer: '369'")
+    print ("45-45-90 Visualizer: '449'")
     
 def complist():
     salist()
@@ -47,17 +49,43 @@ def complist():
 def rtri369():
     print ("")
     print (str(o) + " u")
-    print ("+ _")
-    print ("|60°- _")
-    print ("|       - _ " + str(h) + " u")
-    print ("|           - _")
-    print ("|               - _")
-    print ("+ - +               - _")
-    print ("|90°|                30°- _")
-    print ("+ - + - - - - - - - - - - - - ")
+    print ("█▀▄▄")
+    print ("█60°▀▀▄▄")
+    print ("█       ▀▀▄▄ " + str(h) + " u")
+    print ("█           ▀▀▄▄")
+    print ("█               ▀▀▄▄")
+    print ("█▀▀▀▀█              ▀▀▄▄")
+    print ("█90° █               30°▀▀▄▄")
+    print ("█▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄██▄▄")
     print ("        " + str(a) + " u")
     print ("")
 
+def prove369():
+        if a == o*2:
+            rtri369()
+        else:
+            print ("That is not a 30° 60° 90° triangle.")
+
+def prove449():
+        if a == o:
+            rtri449()
+        else:
+            print ("That is not a 45° 45° 90° triangle.")
+
+
+def rtri449():
+    print ("")
+    print (str(o) + " u")
+    print ("█▀▄")
+    print ("█60▀▄")
+    print ("█    ▀▄ " + str(h) + " u")
+    print ("█      ▀▄")
+    print ("█        ▀▄")
+    print ("█▀▀▀▀█     ▀▄")
+    print ("█90° █    30°▀▄")
+    print ("█▄▄▄▄█▄▄▄▄▄▄▄▄▄█▄")
+    print ("        " + str(a) + " u")
+    print ("")
 
 
 complist()
@@ -72,8 +100,8 @@ while True:
 #trig list
     if form == "pythagorean theorem":
             u = input("Unit type: ")
-            a = int(input("Side A: "))
-            b = int(input("Side B: "))
+            a = float(input("Side A: "))
+            b = float(input("Side B: "))
             h = (a**2 + b**2)**.5
             h = round(h,4)
             print ("Hypotenuse: " + str(h) + " " + u)
@@ -161,12 +189,19 @@ while True:
             o = int(input("Opposite: "))
             a = int(input("Adjacent: "))
             h = int(input("Hypotenuse: "))
-            rtri369()
+            prove369()
+
+    elif form == "449":
+            o = int(input("Opposite: "))
+            a = int(input("Adjacent: "))
+            h = int(input("Hypotenuse: "))
+            prove449()
 
 #help list
     elif form == "#help":
             print ("")
             print ("#help: Brings up this list.")
+            print ("#logo: brings up the sick Unicode block logo")
             print ("#list: Brings up the list of all formulas.")
             print ("#salist: Brings up Surface Area Formula list")
             print ("#vollist: Brings up Volume Formula list")
@@ -177,6 +212,9 @@ while True:
 
     elif form == "#list":
             complist()
+
+    elif form == "#logo":
+            logo()
 
     elif form == "#salist":
             salist()
