@@ -1,9 +1,10 @@
 import math
+
 def logo():
     print ("████  ████  ███   ██ ██  █  █  █      ██   █  █  █  █  ███ ")
     print ("█     █  █  █  █  █ █ █  █  █  █     █  █  █  █  █  █  █ █ ")
     print ("███   █  █  ███   █   █  █  █  █     ████  ████  █  █  █  █")
-    print ("█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.04")
+    print ("█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.05")
 
 logo()
 
@@ -17,7 +18,7 @@ def salist():
     print ("circle · · · · · · : A = πr^2")
     print ("trapezoid  · · · · : A = 1/2(b1 + b2)h")
     print ("sphere · · · · · · : S = 4πr^2")
-    
+
 def vollist():
     print ("Volume Formulas:")
     print ("cube · · · · · · · : V = S^3")
@@ -26,16 +27,16 @@ def vollist():
     print ("cylinder · · · · · : V = πr^3 * h")
     print ("cone · · · · · · · : V = 1/3πr^2 * h")
     print ("sphere · · · · · · : V = 4/3πr^3")
-    
+
 def trilist():
     print ("Trig Formulas:")
     print ("pythagorean theorem: a^2 + b^2 = c^2")
-    
+
 def vislist():
     print ("Visualizers:")
     print ("30-60-90 Visualizer: '369'")
     print ("45-45-90 Visualizer: '449'")
-    
+
 def complist():
     salist()
     print ("")
@@ -77,8 +78,8 @@ def rtri449():
     print ("")
     print (str(o) + " u")
     print ("█▀▄")
-    print ("█60▀▄")
-    print ("█    ▀▄ " + str(h) + " u")
+    print ("█  ▀▄")
+    print ("█60° ▀▄ " + str(h) + " u")
     print ("█      ▀▄")
     print ("█        ▀▄")
     print ("█▀▀▀▀█     ▀▄")
@@ -102,7 +103,7 @@ while True:
             u = input("Unit type: ")
             a = float(input("Side A: "))
             b = float(input("Side B: "))
-            h = (a**2 + b**2)**.5
+            h = math.sqrt(a**2 + b**2)
             h = round(h,4)
             print ("Hypotenuse: " + str(h) + " " + u)
 
@@ -137,7 +138,7 @@ while True:
             s = (4/3)*math.pi*r**3
             s = round(s,4)
             print ("Surface Area: " + str(s) + " " + u + " squared")
-            
+
 #volume list
     elif form == "cube":
             u = input("Unit type: ")
@@ -162,7 +163,7 @@ while True:
             v = h*((1/3)*b**2)
             v = round(v,4)
             print ("Volume: " + str(v) + " " + u + " cubed")
-            
+
     elif form == "cylinder":
             u = input("Unit type: ")
             r = int(input("Radius: "))
@@ -170,7 +171,7 @@ while True:
             v = h*(math.pi*(r**2))
             v = round(v,4)
             print ("Volume: " + str(v) + " " + u + " cubed")
-            
+
     elif form == "cone":
             u = input("Unit type: ")
             h = int(input("Height: "))
@@ -178,7 +179,7 @@ while True:
             v = h*(math.pi*(r**3))/3
             v = round(v,4)
             print ("Volume: " + str(v) + " " + u + " cubed")
-            
+
     elif form == "sphere":
             u = input("Unit type: ")
             v = round(v,4)
@@ -188,13 +189,15 @@ while True:
     elif form == "369":
             o = int(input("Opposite: "))
             a = int(input("Adjacent: "))
-            h = int(input("Hypotenuse: "))
+            h = math.sqrt(o**2 + a**2)
+            h = round(h,4)
             prove369()
 
     elif form == "449":
             o = int(input("Opposite: "))
             a = int(input("Adjacent: "))
-            h = int(input("Hypotenuse: "))
+            h = math.sqrt(o**2 + a**2)
+            h = round(h,4)
             prove449()
 
 #help list
