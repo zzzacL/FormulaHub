@@ -3,6 +3,7 @@ FormulaHub is a basic Python program made for me to practice my programming skil
 
 Help List:
 	#help: Brings up this list.
+	
 	#list: Brings up the list of all formulas.
 	#salist: Brings up Surface Area Formula list
 	#vollist: Brings up Volume Formula list
