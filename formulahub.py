@@ -1,6 +1,5 @@
 import math
 import os
-from time import sleep
 
 def clear():
     if opsys == "win":
@@ -12,7 +11,11 @@ def logo():
     print ("████  ████  ███   ██ ██  █  █  █      ██   █  █  █  █  ███ ")
     print ("█     █  █  █  █  █ █ █  █  █  █     █  █  █  █  █  █  █ █ ")
     print ("███   █  █  ███   █   █  █  █  █     ████  ████  █  █  █  █")
-    print ("█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.06")
+    print ("█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.07")
+
+def clogo():
+    clear()
+    logo()
 
 logo()
 
@@ -55,8 +58,8 @@ def rtri369():
     print ("")
     print (str(o) + " u")
     print ("█▀▄▄")
-    print ("█60°▀▀▄▄")
-    print ("█       ▀▀▄▄ " + str(h) + " u")
+    print ("█   ▀▀▄▄")
+    print ("█60°    ▀▀▄▄ " + str(h) + " u")
     print ("█           ▀▀▄▄")
     print ("█               ▀▀▄▄")
     print ("█▀▀▀▀█              ▀▀▄▄")
@@ -68,6 +71,7 @@ def rtri369():
 def prove369():
     if a == o*2:
         rtri369()
+        resetprog()
     else:
         print ("That is not a 30° 60° 90° triangle.")
 
@@ -75,8 +79,8 @@ def rtri449():
     print ("")
     print (str(o) + " u")
     print ("█▀▄")
-    print ("█60▀▄")
-    print ("█    ▀▄ " + str(h) + " u")
+    print ("█  ▀▄")
+    print ("█60° ▀▄ " + str(h) + " u")
     print ("█      ▀▄")
     print ("█        ▀▄")
     print ("█▀▀▀▀█     ▀▄")
@@ -97,15 +101,14 @@ def resetprog():
     logo()
     complist()
 
+opsys = input("Win/Lin/Mac: ")
+opsys = opsys.lower()
 
-
+clogo()
 complist()
 
 print ("Type '#help' for commands.")
 print ("")
-
-opsys = input("Win/Lin/Mac: ")
-opsys = opsys.lower()
 
 while True:
     form = input("Input: ")
@@ -113,17 +116,18 @@ while True:
 
 #trig list
     if form == "pythagorean theorem":
-            clear()
+            clogo()
             u = input("Unit type: ")
             a = float(input("Side A: "))
             b = float(input("Side B: "))
-            h = (a**2 + b**2)**.5
+            h = math.sqrt(a**2 + b**2)
             h = round(h,4)
             print ("Hypotenuse: " + str(h) + " " + u)
             resetprog()
 
 #surface area list
     elif form == "triangle":
+            clogo()
             u = input("Unit type: ")
             b = int(input("Base: "))
             h = int(input("Height: "))
@@ -133,6 +137,7 @@ while True:
             resetprog()
 
     elif form == "circle":
+            clogo()
             u = input("Unit type: ")
             r = int(input("Radius: "))
             a = math.pi*r*r
@@ -141,6 +146,7 @@ while True:
             resetprog()
 
     elif form == "trapezoid":
+            clogo()
             u = input("Unit type: ")
             b1 = int(input("Base 1: "))
             b2 = int(input("Base 2: "))
@@ -151,15 +157,17 @@ while True:
             resetprog()
 
     elif form == "sphere":
+            clogo()
             u = input("Unit type: ")
             r = int(input("Radius: "))
-            s = (4/3)*math.pi*r**3
+            s = 4*math.pi*r**2
             s = round(s,4)
             print ("Surface Area: " + str(s) + " " + u + " squared")
             resetprog()
             
 #volume list
     elif form == "cube":
+            clogo()
             u = input("Unit type: ")
             s = int(input("Side length: "))
             s = s**3
@@ -168,6 +176,7 @@ while True:
             resetprog()
 
     elif form == "rectangular prism":
+            clogo()
             u = input("Unit type: ")
             l = int(input("Length: "))
             w = int(input("Width: " ))
@@ -178,6 +187,7 @@ while True:
             resetprog()
 
     elif form == "sqare pyramid":
+            clogo()
             u = input("Unit type: ")
             b = int(input("Base: "))
             h = int(input("Height: "))
@@ -187,6 +197,7 @@ while True:
             resetprog()
             
     elif form == "cylinder":
+            clogo()
             u = input("Unit type: ")
             r = int(input("Radius: "))
             h = int(input("Height: "))
@@ -196,6 +207,7 @@ while True:
             resetprog()
             
     elif form == "cone":
+            clogo()
             u = input("Unit type: ")
             h = int(input("Height: "))
             r = int(input("Radius: "))
@@ -205,28 +217,32 @@ while True:
             resetprog()
             
     elif form == "sphere":
+            clogo()
             u = input("Unit type: ")
             v = round(v,4)
             print ("Volume: " + str(v) + " " + u + " cubed")
             resetprog()
 
-#visuzalizer list
+#visualizer list
     elif form == "369":
-            o = int(input("Opposite: "))
-            a = int(input("Adjacent: "))
-            h = int(input("Hypotenuse: "))
+            clogo()
+            o = float(input("Opposite: "))
+            a = float(input("Adjacent: "))
+            h = math.sqrt(o**2 + a**2)
+            h = round(h,4)
             prove369()
 
     elif form == "449":
-            o = int(input("Opposite: "))
-            a = int(input("Adjacent: "))
-            h = int(input("Hypotenuse: "))
+            clogo()
+            o = float(input("Opposite: "))
+            a = float(input("Adjacent: "))
+            h = math.sqrt(o**2 + a**2)
+            h = round(h,4)
             prove449()
 
 #help list
     elif form == "#help":
-            clear()
-            logo()
+            clogo()
             print ("")
             print ("#help: Brings up this list.")
             print ("#logo: brings up the sick Unicode block logo")
@@ -238,39 +254,33 @@ while True:
             print ("")
 
     elif form == "#list":
-        clear()
-        logo()
+        clogo()
         complist()
 
     elif form == "#logo":
-        clear()
-        logo()
+        clogo()
 
     elif form == "#info":
-        clear()
+        clogo()
         print ("This program will display a list of formulas to complete mathematical operations.")
         print ("Select the name of the formula you require.")
         print ("")
         
 
     elif form == "#salist":
-        clear()
-        logo()
+        clogo()
         salist()
 
     elif form == "#vollist":
-        clear()
-        logo()
+        clogo()
         vollist()
 
     elif form == "#trilist":
-        clear()
-        logo()
+        clogo()
         trilist()
 
     elif form == "#vislist":
-        clear()
-        logo()
+        clogo()
         vislist()
 
     else:
