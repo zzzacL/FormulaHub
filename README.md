@@ -10,6 +10,9 @@ Help List:
 	#trilist: Brings up Trig Formula list
 	#vislist: Brings up Visualizer list
 
+<h2>Update v0.08.5!</h2>
+	Forgot to remove some simplify some print() functions.
+
 <h1>Update v0.08!</h1>
 	Did a major rewrite of the logic within the program, added some functions and another while loop. I also removed large print walls to clean up the file. During the original release, back when I was interested in the formulas rather than user convenience, I completely forgot about sphere volume formula, so selecting "sphere" would cause the program to use the surface area formula. In reality, that was a fun logical exercise, and I hope for more in the future. More formulas coming soon! Also maybe pages!
 
