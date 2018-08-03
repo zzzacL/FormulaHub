@@ -6,7 +6,7 @@ def logo():
 ████  ████  ███   ██ ██  █  █  █      ██   █  █  █  █  ███
 █     █  █  █  █  █ █ █  █  █  █     █  █  █  █  █  █  █ █
 ███   █  █  ███   █   █  █  █  █     ████  ████  █  █  █  █
-█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.08
+█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.08.5
 """)
 
 logo()
@@ -233,15 +233,14 @@ def entirething():
     #help list
         elif form == "#help":
                 clogo()
-                print ("")
-                print ("#help: Brings up this list.")
-                print ("#logo: brings up the sick Unicode block logo")
-                print ("#list: Brings up the list of all formulas.")
-                print ("#salist: Brings up Surface Area Formula list")
-                print ("#vollist: Brings up Volume Formula list")
-                print ("#trilist: Brings up Trig Formula list")
-                print ("#vislist: Brings up Visualizer list")
-                print ("")
+                print ("""#help: Brings up this list.
+#logo: brings up the sick Unicode block logo
+#list: Brings up the list of all formulas.
+#salist: Brings up Surface Area Formula list
+#vollist: Brings up Volume Formula list
+#trilist: Brings up Trig Formula list
+#vislist: Brings up Visualizer list
+""")
 
         elif form == "#list":
             clogo()
@@ -252,9 +251,9 @@ def entirething():
 
         elif form == "#info":
             clogo()
-            print ("This program will display a list of formulas to complete mathematical operations.")
-            print ("Select the name of the formula you require.")
-            print ("")
+            print ("""This program will display a list of formulas to complete mathematical operations.")
+Select the name of the formula you require.")
+""")
             
 
         elif form == "#salist":
