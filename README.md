@@ -10,6 +10,10 @@ Help List:
 	#trilist: Brings up Trig Formula list
 	#vislist: Brings up Visualizer list
 
+<h1>Update v0.09!</h1>
+	Added auto OS selection, added a new configuration for decimal places and I might create an accompanying config file later.
+	plans: I should probably turn the program into multiple loops rather than one big loop, which may require a rewrite... I'll deal with that later, but until then I just need to worry about adding more and more formulas.
+
 <h2>Update v0.08.5!</h2>
 	Forgot to remove some simplify some print() functions.
 
