@@ -3,12 +3,18 @@ FormulaHub is a basic Python program made for me to practice my programming skil
 
 Help List:
 
+	#logo: Brings up the sick Unicode logo.
 	#help: Brings up this list.
 	#list: Brings up the list of all formulas.
-	#salist: Brings up Surface Area Formula list
-	#vollist: Brings up Volume Formula list
-	#trilist: Brings up Trig Formula list
-	#vislist: Brings up Visualizer list
+	#salist: Brings up Surface Area Formula list.
+	#vollist: Brings up Volume Formula list.
+	#trilist: Brings up Trig Formula list.
+	#vislist: Brings up Visualizer list.
+	#settings: Brings up Settings.
+
+Settings List:
+
+	@deci: Allows for decimal place configuration(0-13 places)
 
 <h1>Update v0.09!</h1>
 	Added auto OS selection, added a new configuration for decimal places and I might create an accompanying config file later.
