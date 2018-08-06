@@ -20,13 +20,13 @@ Settings List:
 	Added auto OS selection, added a new configuration for decimal places and I might create an accompanying config file later.
 	plans: I should probably turn the program into multiple loops rather than one big loop, which may require a rewrite... I'll deal with that later, but until then I just need to worry about adding more and more formulas.
 
-<h2>Update v0.08.5!</h2>
+<h3>Update v0.08.5!</h3>
 	Forgot to remove some simplify some print() functions.
 
-<h1>Update v0.08!</h1>
+<h2>Update v0.08!</h2>
 	Did a major rewrite of the logic within the program, added some functions and another while loop. I also removed large print walls to clean up the file. During the original release, back when I was interested in the formulas rather than user convenience, I completely forgot about sphere volume formula, so selecting "sphere" would cause the program to use the surface area formula. In reality, that was a fun logical exercise, and I hope for more in the future. More formulas coming soon! Also maybe pages!
 
-<h2>Update v0.07!</h2>
+<h3>Update v0.07!</h3>
 	Removed the complete list of formulas from being printed before an operating system is selected, and fixed the formula for spheres. Added a function to remove a lot of repeated code!
 	
 <h3>Update v0.06!</h3>
