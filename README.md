@@ -1,4 +1,4 @@
-# FormulaHub v0.08
+# FormulaHub v0.09
 FormulaHub is a basic Python program made for me to practice my programming skills. Works best with monospaced fonts
 
 Help List:
