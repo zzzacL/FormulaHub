@@ -1,4 +1,4 @@
-# FormulaHub v0.09
+# FormulaHub v0.10
 FormulaHub is a basic Python program made for me to practice my programming skills. Works best with monospaced fonts
 
 Help List:
@@ -16,14 +16,17 @@ Settings List:
 
 	@deci: Allows for decimal place configuration(0-13 places)
 
-<h1>Update v0.09!</h1>
+<h1>Update v0.10!</h1>
+	Organized the lists, fixed a formula, added Slope with optional angle, Point distance and the Quadratic formula. I also documented and organized the code better within the program. The next updates will add more advanced formulas from Algebra II and Pre-Calculus/ Trig.
+
+<h2>Update v0.09!</h2>
 	Added auto OS selection, added a new configuration for decimal places and I might create an accompanying config file later.
 	plans: I should probably turn the program into multiple loops rather than one big loop, which may require a rewrite... I'll deal with that later, but until then I just need to worry about adding more and more formulas.
 
 <h3>Update v0.08.5!</h3>
 	Forgot to remove some simplify some print() functions.
 
-<h2>Update v0.08!</h2>
+<h3>Update v0.08!</h3>
 	Did a major rewrite of the logic within the program, added some functions and another while loop. I also removed large print walls to clean up the file. During the original release, back when I was interested in the formulas rather than user convenience, I completely forgot about sphere volume formula, so selecting "sphere" would cause the program to use the surface area formula. In reality, that was a fun logical exercise, and I hope for more in the future. More formulas coming soon! Also maybe pages!
 
 <h3>Update v0.07!</h3>
