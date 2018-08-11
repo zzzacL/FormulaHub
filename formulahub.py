@@ -412,9 +412,9 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
             clogo()
             vollist()
 
-        elif form == "#trilist":
+        elif form == "#triglist":
             clogo()
-            trilist()
+            triglist()
 
         elif form == "#vislist":
             clogo()
