@@ -8,7 +8,7 @@ Help List:
 	#list: Brings up the list of all formulas.
 	#salist: Brings up Surface Area Formula list.
 	#vollist: Brings up Volume Formula list.
-	#trilist: Brings up Trig Formula list.
+	#triglist: Brings up Trig Formula list.
 	#vislist: Brings up Visualizer list.
 	#settings: Brings up Settings.
 
