@@ -16,6 +16,8 @@ Settings List:
 
 	@deci: Allows for decimal place configuration(0-13 places)
 
+For more information, check the >>> <a href="https://github.com/zzzacL/FormulaHub/wiki">Wiki</a>
+
 <h1>Update v0.10!</h1>
 	Organized the lists, fixed a formula, added Slope with optional angle, Point distance and the Quadratic formula. I also documented and organized the code better within the program. The next updates will add more advanced formulas from Algebra II and Pre-Calculus/ Trig.
 
