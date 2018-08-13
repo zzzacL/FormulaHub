@@ -449,6 +449,8 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
 # automatic OS selection
 
 if platform == "linux" or platform == "linux2" or platform == "darwin":
+    def clear():
+        _ = os.system('cls')
     def clogo():
         clear()
         logo()
