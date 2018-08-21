@@ -1,5 +1,5 @@
 # FormulaHub v0.11
-FormulaHub is a basic Python program made for me to practice my programming skills. Works best with monospaced fonts
+FormulaHub is a basic Python program made for me to practice my programming skills. Works best with monospaced fonts. Has not been "chmod +x"'d, sorry!!
 
 Help List:
 
