@@ -9,19 +9,24 @@ Help List:
 	#salist: Brings up Surface Area Formula list.
 	#vollist: Brings up Volume Formula list.
 	#triglist: Brings up Trig Formula list.
+	#al2list: Brings up Algebra II Formula list.
 	#vislist: Brings up Visualizer list.
 	#settings: Brings up Settings.
 
 Settings List:
 
 	@deci: Allows for decimal place configuration(0-13 places)
+	@ptri: Configure the levels of Pascal's Triangle(0-12 rows)
 
 For more information, check the >>> <a href="https://github.com/zzzacL/FormulaHub/wiki">Wiki</a>
 
-<h1>Update v0.10!</h1>
+<h1>Update v0.11!</h1>
+	Added a new list!! The Algebra II list. It has 3 new formulas, Multiplication/ Division of powers and the Discriminant to compliment the moved-around Quadtratic Formula. Also, Pascal's Triangle!! You can now have a visual representation of Pascal's Triangle in the #vislist up to 12 rows (default: 8), which is probably more than anyone will ever need, but it's available in a cool python list!
+	
+<h2>Update v0.10!</h2>
 	Organized the lists, fixed a formula, added Slope with optional angle, Point distance and the Quadratic formula. I also documented and organized the code better within the program. The next updates will add more advanced formulas from Algebra II and Pre-Calculus/ Trig.
 
-<h2>Update v0.09!</h2>
+<h3>Update v0.09!</h3>
 	Added auto OS selection, added a new configuration for decimal places and I might create an accompanying config file later.
 	plans: I should probably turn the program into multiple loops rather than one big loop, which may require a rewrite... I'll deal with that later, but until then I just need to worry about adding more and more formulas.
 
