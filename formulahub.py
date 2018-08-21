@@ -11,7 +11,7 @@ def logo():
 ████  ████  ███   ██ ██  █  █  █      ██   █  █  █  █  ███
 █     █  █  █  █  █ █ █  █  █  █     █  █  █  █  █  █  █ █
 ███   █  █  ███   █   █  █  █  █     ████  ████  █  █  █  █
-█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.10
+█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.11
 """)
 
 #Defining the lists users can choose from
@@ -44,6 +44,13 @@ def triglist():
 Pythagorean Theorem: C = sqrt(a^2 + b^2)
 Slope/ Angle · · · : M = y2 - y1 / x2 - x1
 Point Distance · · : D = sqrt([x2 - x1]^2 + [y2 - y1]^2)
+""")
+
+def al2list():
+    print ("""Algebra II Formulas:
+Multiply Powers    : a^(m+n) = (a^m)(a^n)
+Divide Powers      : a^(m-n) = (a^m)/(a^n)
+Discriminant       : D = b^2 - 4ac
 Quadratic Formula  : X = -b +/- sqrt(b^2 - 4ac) / 2a
 """)
 
@@ -51,6 +58,7 @@ def vislist():
     print ("""Visualizers:
 30-60-90 Visualizer: '369'
 45-45-90 Visualizer: '449'
+Pascal's Triangle  : 'ptri'
 """)
 
 #Defining a composition of the before lists
@@ -59,6 +67,7 @@ def complist():
     salist()
     vollist()
     triglist()
+    al2list()
     vislist()
 
 #Defining the reset feature for when a formula completes. The clear() function
@@ -75,6 +84,7 @@ def resetprog():
 def main():
     complist()
     deci = 4
+    ptri = 9
     while True:
 
         def rtri369():
@@ -113,6 +123,10 @@ def main():
 █90° █    45°▀▄
 █▄▄▄▄█▄▄▄▄▄▄▄▄▄█▄ """+ str(a) + """ u
 """)
+
+        def finish():
+            clogo()
+            complist()
 
         def prove449():
             if a == o:
@@ -189,22 +203,6 @@ def main():
                 d = math.sqrt(g1 + g2)
                 d = round(d,deci)
                 print ("The distance is: " + str(d) + " units.")
-                resetprog()
-
-#the infamous quadratic formula(could be simplified i know)
-
-        if form == "quadratic formula":
-                clogo()
-                b = float(input("B: "))
-                a = float(input("A: "))
-                c = float(input("C: "))
-                x = (math.sqrt((b**2) - (4*a*c)) - b) / (2*a)
-                x = round(x,4)
-                negx = math.sqrt((b**2) - (4*a*c))
-                negx = (-b - negx) / (2*a)
-                negx = round(negx,4)
-                print ("+X: " + str(x))
-                print ("-X: " + str(negx))
                 resetprog()
 
     #surface area list
@@ -377,6 +375,70 @@ def main():
                 prove449()
                 resetprog()
 
+        elif form == "ptri":
+                clogo()
+                ptrilist=["0                               01 ", "1                             1    1", "2                            1  02  1", "3                          1  3    3  1", "4                        1  4   06   4  1", "5                      1  5  10    10  5  1", "6                    1  6  15   20   15  6  1", "7                  1  7  21  35    35  21  7  1", "8                1  8  28  56   70   56  28  8  1", "9             1  9  36  84  126    126  84  36  9  1", "10        1  10  45  120  210  252   210  120  45  10  1", "11     1  11  55  165  330  462    462  330  165  55  11  1", "12  1  12  66  220  495  792   924    792  495  220  66  12  1", ]
+                for item in ptrilist[0:ptri]:
+                    print(item)
+                resetprog()
+
+        
+
+    #algebra 2 list
+
+        if form == "multiply powers":
+                clogo()
+                a = float(input("Base(a): "))
+                m = float(input("m: "))
+                n = float(input("n: "))
+                o = a**(m+n)
+                o = round(o,deci)
+                print ("Product: %s" % o)
+                resetprog()
+
+        if form == "divide powers":
+                clogo()
+                a = float(input("Base(a): "))
+                m = float(input("m: "))
+                n = float(input("n: "))
+                o = a**(m-n)
+                o = round(o,deci)
+                print ("Product: %s" % o)
+                resetprog()
+
+        if form == "discriminant":
+                clogo()
+                b = float(input("B: "))
+                a = float(input("A: "))
+                c = float(input("C: "))
+                d = (b**2) - (4*a*c)
+                if d > 0:
+                    print ("Two distinct real roots.")
+                    resetprog()
+                elif d == 0:
+                    print ("One distinct real root/ two equal real roots")
+                elif d < 0:
+                    print ("No real roots")
+
+#the infamous quadratic formula(could be simplified i know)
+
+        if form == "quadratic formula":
+                clogo()
+                b = float(input("B: "))
+                a = float(input("A: "))
+                c = float(input("C: "))
+                x = (math.sqrt((b**2) - (4*a*c)) - b) / (2*a)
+                x = round(x,deci)
+                negx = math.sqrt((b**2) - (4*a*c))
+                negx = (-b - negx) / (2*a)
+                negx = round(negx,deci)
+                print ("+X: " + str(x))
+                print ("-X: " + str(negx))
+                resetprog()
+
+    #add a list to sort out a list of numbers
+    #maybe do mean, med and mode (iteration)
+
     #help list
 
         elif form == "#help":
@@ -416,6 +478,10 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
             clogo()
             triglist()
 
+        elif form == "#al2list":
+            clogo()
+            al2list()
+
         elif form == "#vislist":
             clogo()
             vislist()
@@ -425,6 +491,7 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
         elif form == "#settings":
             clogo()
             print("""@deci: Configure the amount of decimal places.
+@ptri: Configure the levels of Pascal's Triangle.
             """)
 
         elif form == "@deci":
@@ -432,11 +499,73 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
             while True:
                 try:
                     deci = int(input("Amount of decimal places(0 - 13): "))
-                    clogo()
-                    complist()
+                    finish()
                     break
                 except ValueError:
                     print ("Pick a number from 0 - 13.")
+
+        elif form == "@ptri":
+            clogo()
+            while True:
+                try:
+                    ptri = int(input("Levels of Pascal's Triangle(0 - 12): "))
+                    if ptri == 0:
+                        ptri = 1
+                        finish()
+                        break
+                    elif ptri == 1:
+                        ptri = 2
+                        finish()
+                        break
+                    elif ptri == 2:
+                        ptri = 3
+                        finish()
+                        break
+                    elif ptri == 3:
+                        ptri = 4
+                        finish()
+                        break
+                    elif ptri == 4:
+                        ptri = 5
+                        finish()
+                        break
+                    elif ptri == 5:
+                        ptri = 6
+                        finish()
+                        break
+                    elif ptri == 6:
+                        ptri = 7
+                        finish()
+                        break
+                    elif ptri == 7:
+                        ptri = 8
+                        finish()
+                        break
+                    elif ptri == 8:
+                        ptri = 9
+                        finish()
+                        break
+                    elif ptri == 9:
+                        ptri = 10
+                        finish()
+                        break
+                    elif ptri == 10:
+                        ptri = 11
+                        finish()
+                        break
+                    elif ptri == 11:
+                        ptri = 12
+                        finish()
+                        break
+                    elif ptri == 12:
+                        ptri = 13
+                        finish()
+                        break
+                    else:
+                        print ("Pick a number from 0 - 12.")
+                except ValueError:
+                    print ("Pick a number from 0 - 12.")
+                    
 
         else:
             print ("Please select from #help or #list.")
