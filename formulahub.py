@@ -48,9 +48,9 @@ Point Distance · · : D = sqrt([x2 - x1]^2 + [y2 - y1]^2)
 
 def al2list():
     print ("""Algebra II Formulas:
-Multiply Powers    : a^(m+n) = (a^m)(a^n)
-Divide Powers      : a^(m-n) = (a^m)/(a^n)
-Discriminant       : D = b^2 - 4ac
+Multiply Powers  · : a^(m+n) = (a^m)(a^n)
+Divide Powers  · · : a^(m-n) = (a^m)/(a^n)
+Discriminant · · · : D = b^2 - 4ac
 Quadratic Formula  : X = -b +/- sqrt(b^2 - 4ac) / 2a
 """)
 
