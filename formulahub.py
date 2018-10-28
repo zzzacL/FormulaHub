@@ -579,7 +579,7 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
 
 if platform == "linux" or platform == "linux2" or platform == "darwin":
     def clear():
-        _ = os.system('cls')
+        _ = os.system('clear')
     def clogo():
         clear()
         logo()
