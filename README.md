@@ -1,5 +1,5 @@
-# FormulaHub v0.11
-FormulaHub is a basic Python program made for me to practice my programming skills. Works best with monospaced fonts. Has not been "chmod +x"'d, sorry!!
+# FormulaHub v0.11a
+FormulaHub is a basic Python program made for me to practice my programming skills. Works best with monospaced fonts. Be sure to "chmod +x formulahub.py" first!!
 
 Help List:
 
@@ -20,10 +20,13 @@ Settings List:
 
 For more information, check the >>> <a href="https://github.com/zzzacL/FormulaHub/wiki">Wiki</a>
 
-<h1>Update v0.11!</h1>
+<h1>Update v0.11a!</h1>
+	Removed a bunch of nonsensical lines. There was a 50 line chain that worked, but could be wayy more simple - so I simplified it. All hunks of text have been reduced to one line if possible. There were also a few bugs that I have fixed and polished up.
+
+<h2>Update v0.11!</h2>
 	Added a new list!! The Algebra II list. It has 3 new formulas, Multiplication/ Division of powers and the Discriminant to compliment the moved-around Quadtratic Formula. Also, Pascal's Triangle!! You can now have a visual representation of Pascal's Triangle in the #vislist up to 12 rows (default: 8), which is probably more than anyone will ever need, but it's available in a cool python list!
 	
-<h2>Update v0.10!</h2>
+<h3>Update v0.10!</h3>
 	Organized the lists, fixed a formula, added Slope with optional angle, Point distance and the Quadratic formula. I also documented and organized the code better within the program. The next updates will add more advanced formulas from Algebra II and Pre-Calculus/ Trig.
 
 <h3>Update v0.09!</h3>
