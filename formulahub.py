@@ -11,55 +11,25 @@ def logo():
 ████  ████  ███   ██ ██  █  █  █      ██   █  █  █  █  ███
 █     █  █  █  █  █ █ █  █  █  █     █  █  █  █  █  █  █ █
 ███   █  █  ███   █   █  █  █  █     ████  ████  █  █  █  █
-█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.11
+█     ████  █  █  █   █   ███  ████  █  █  █  █   ███  ███  v0.11a
 """)
 
 #Defining the lists users can choose from
 
 def salist():
-    print ("""Area/ Surface Area:
-Traingle · · · · · : A = 1/2b * h
-Circle · · · · · · : A = πr^2
-Trapezoid  · · · · : A = 1/2(b1 + b2) * h
-Square · · · · · · : A = s^2
-Rectangle  · · · · : A = l * w
-Parallelogram  · · : A = b * h
-Sphere · · · · · · : SA = 4πr^2
-Cube · · · · · · · : SA = 6s^2
-Cylinder · · · · · : SA = 2πrh
-""")
+    print ("Area/ Surface Area: \nTraingle · · · · · : A = 1/2b * h \nCircle · · · · · · : A = πr^2 \nTrapezoid  · · · · : A = 1/2(b1 + b2) * h \nSquare · · · · · · : A = s^2 \nRectangle  · · · · : A = l * w \nParallelogram  · · : A = b * h \nSphere · · · · · · : SA = 4πr^2 \nCube · · · · · · · : SA = 6s^2 \nCylinder · · · · · : SA = 2πrh \n")
 
 def vollist():
-    print ("""Volume Formulas:
-Rectangular Prism  : V = l * w * h
-Square Pyramid · · : V = 1/3(b)^2 * h
-Cone · · · · · · · : V = 1/3πr^2 * h
-Vol Sphere · · · · : V = 4/3πr^3
-Vol Cube · · · · · : V = S^3
-Vol Cylinder · · · : V = πr^3 * h
-""")
+    print ("Volume Formulas: \nRectangular Prism  : V = l * w * h \nSquare Pyramid · · : V = 1/3(b)^2 * h \nCone · · · · · · · : V = 1/3πr^2 * h \nVol Sphere · · · · : V = 4/3πr^3 \nVol Cube · · · · · : V = S^3 \nVol Cylinder · · · : V = πr^3 * h\n")
 
 def triglist():
-    print ("""Trig Formulas:
-Pythagorean Theorem: C = sqrt(a^2 + b^2)
-Slope/ Angle · · · : M = y2 - y1 / x2 - x1
-Point Distance · · : D = sqrt([x2 - x1]^2 + [y2 - y1]^2)
-""")
+    print ("Trig Formulas: \nPythagorean Theorem: C = sqrt(a^2 + b^2) \nSlope/ Angle · · · : M = y2 - y1 / x2 - x1 \nPoint Distance · · : D = sqrt([x2 - x1]^2 + [y2 - y1]^2) \n")
 
 def al2list():
-    print ("""Algebra II Formulas:
-Multiply Powers  · : a^(m+n) = (a^m)(a^n)
-Divide Powers  · · : a^(m-n) = (a^m)/(a^n)
-Discriminant · · · : D = b^2 - 4ac
-Quadratic Formula  : X = -b +/- sqrt(b^2 - 4ac) / 2a
-""")
+    print ("Algebra II Formulas: \nMultiply Powers  · : a^(m+n) = (a^m)(a^n) \nDivide Powers  · · : a^(m-n) = (a^m)/(a^n) \nDiscriminant · · · : D = b^2 - 4ac \nQuadratic Formula  : X = -b +/- sqrt(b^2 - 4ac) / 2a \n")
 
 def vislist():
-    print ("""Visualizers:
-30-60-90 Visualizer: '369'
-45-45-90 Visualizer: '449'
-Pascal's Triangle  : 'ptri'
-""")
+    print ("Visualizers: \n30-60-90 Visualizer: '369' \n45-45-90 Visualizer: '449' \nPascal's Triangle  : 'ptri' \n")
 
 #Defining a composition of the before lists
 
@@ -74,7 +44,8 @@ def complist():
 #is defined before this loop is executed
 
 def resetprog():
-    input("Press enter to continue")
+    print("")
+    input("Press enter to continue ")
     clear()
     logo()
     complist()
@@ -380,6 +351,7 @@ def main():
                 ptrilist=["0                               01 ", "1                             1    1", "2                            1  02  1", "3                          1  3    3  1", "4                        1  4   06   4  1", "5                      1  5  10    10  5  1", "6                    1  6  15   20   15  6  1", "7                  1  7  21  35    35  21  7  1", "8                1  8  28  56   70   56  28  8  1", "9             1  9  36  84  126    126  84  36  9  1", "10        1  10  45  120  210  252   210  120  45  10  1", "11     1  11  55  165  330  462    462  330  165  55  11  1", "12  1  12  66  220  495  792   924    792  495  220  66  12  1", ]
                 for item in ptrilist[0:ptri]:
                     print(item)
+                print("")
                 resetprog()
 
         
@@ -443,15 +415,7 @@ def main():
 
         elif form == "#help":
                 clogo()
-                print ("""#help: Brings up this list.
-#logo  · : Brings up the sick Unicode block logo
-#list  · : Brings up the list of all formulas.
-#salist  : Brings up Surface Area Formula list
-#vollist : Brings up Volume Formula list
-#triglist: Brings up Trig Formula list
-#vislist : Brings up Visualizer list
-#settings: Brings up Settings
-""")
+                print ("#logo  · : Brings up the sick Unicode block logo \n#list  · : Brings up the list of all formulas. \n#salist  : Brings up Surface Area Formula list \n#vollist : Brings up Volume Formula list \n#triglist: Brings up Trig Formula list \n#vislist : Brings up Visualizer list \n#settings: Brings up Settings \n")
 
         elif form == "#list":
             clogo()
@@ -462,9 +426,7 @@ def main():
 
         elif form == "#info":
             clogo()
-            print ("""This program will display a list of formulas to complete mathematical operations.")
-Select the name of the formula you require. Default is 4 decimal places, go to #settings to change.")
-""")
+            print ("This program will display a list of formulas to complete mathematical operations.\n")
 
         elif form == "#salist":
             clogo()
@@ -490,9 +452,7 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
 
         elif form == "#settings":
             clogo()
-            print("""@deci: Configure the amount of decimal places.
-@ptri: Configure the levels of Pascal's Triangle.
-            """)
+            print("@deci: Configure the amount of decimal places. \n@ptri: Configure the levels of Pascal's Triangle.\n")
 
         elif form == "@deci":
             clogo()
@@ -509,60 +469,9 @@ Select the name of the formula you require. Default is 4 decimal places, go to #
             while True:
                 try:
                     ptri = int(input("Levels of Pascal's Triangle(0 - 12): "))
-                    if ptri == 0:
-                        ptri = 1
-                        finish()
-                        break
-                    elif ptri == 1:
-                        ptri = 2
-                        finish()
-                        break
-                    elif ptri == 2:
-                        ptri = 3
-                        finish()
-                        break
-                    elif ptri == 3:
-                        ptri = 4
-                        finish()
-                        break
-                    elif ptri == 4:
-                        ptri = 5
-                        finish()
-                        break
-                    elif ptri == 5:
-                        ptri = 6
-                        finish()
-                        break
-                    elif ptri == 6:
-                        ptri = 7
-                        finish()
-                        break
-                    elif ptri == 7:
-                        ptri = 8
-                        finish()
-                        break
-                    elif ptri == 8:
-                        ptri = 9
-                        finish()
-                        break
-                    elif ptri == 9:
-                        ptri = 10
-                        finish()
-                        break
-                    elif ptri == 10:
-                        ptri = 11
-                        finish()
-                        break
-                    elif ptri == 11:
-                        ptri = 12
-                        finish()
-                        break
-                    elif ptri == 12:
-                        ptri = 13
-                        finish()
-                        break
-                    else:
-                        print ("Pick a number from 0 - 12.")
+                    ptri = ptri + 1
+                    finish()
+                    break
                 except ValueError:
                     print ("Pick a number from 0 - 12.")
                     
