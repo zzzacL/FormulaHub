@@ -44,5 +44,3 @@ For more information, check the >>> <a href="https://github.com/zzzacL/FormulaHu
 	
 <h3>Update v0.06!</h3>
 	This update cleaned up the feel of the program by not making it take up 1,000,000 lines in your termainal. I will also start doing little update logs like this.
-
-For any help or criticisms of my terrible code, contact me on Twitter @zaciskewl
